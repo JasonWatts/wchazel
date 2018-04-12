@@ -4,6 +4,8 @@ Run server.py, then run client.py
 
 
 DOCUMENTATION:
+
+
     | Function name  |Description                     |
     | -------------- | ------------------------------ |
     | `GET/`         | Display the help window.       |
