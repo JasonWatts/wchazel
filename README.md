@@ -41,7 +41,7 @@ Support
 -------
 
 If you are having issues, please let us know.
-We have a mailing list located at: project@google-groups.com
+Make an issue on this page: https://gitlab.com/wchazel/hazelproject-server/hazel-server
 
 License
 -------
@@ -49,7 +49,8 @@ License
 The project is licensed under the BSD license.
 
 
-FUNCTIONS:
+Functions
+---------
 
     | Function name  | Description                                                            |
     | -------------- |------------------------------------------------------------------------|
