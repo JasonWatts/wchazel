@@ -1,11 +1,57 @@
 To Run:
 Run server.py, then run client.py
 
+Hazel
+========
 
-DOCUMENTATION:
+Hazel is essentially an Alexa-Walkie-Talkie.  It allows users to speak to other
+users through a Raspberry Pi based contraption.
+
+Look how easy it is to use!
+
+    Download server.py and run it on whichever machine you want to be the host.
+
+    Download client.py and run it on whichever machine you want to connect with
+    the host.
 
 
-    | Function name  |Description                                                             |
+Features
+--------
+
+- Walkie Talkie-esque communication!
+- Speech commands!  "Hi Hazel!"  "Hazel, connect me to Kevin."
+- Make cool things happen.
+- Annoy people.
+
+Installation
+------------
+
+Install $project by running:
+
+    install project
+
+Contribute
+----------
+
+- Issue Tracker: github.com/$project/$project/issues
+- Source Code: github.com/$project/$project
+- Made by Westmont's CS145 class.  Operating Systems Spring 2018.
+
+Support
+-------
+
+If you are having issues, please let us know.
+We have a mailing list located at: project@google-groups.com
+
+License
+-------
+
+The project is licensed under the BSD license.
+
+
+FUNCTIONS:
+
+    | Function name  | Description                                                            |
     | -------------- |------------------------------------------------------------------------|
     | `GET/`         | Display the help window.                                               |
     | `FIND/`        | Lists all users                                                        |
