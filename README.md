@@ -55,3 +55,4 @@ Functions
     |  CALL/TARGET   | Defines which user to call                                             |
     |  DROP/         | Drops connection to other user but still allows for other connections  |
     |  GOODBYE/      | Disconnects from the server.  Does not allow new connections           |
+    |  /HELLO/BOB    | Pushes string "Hello NAME" to client                                   |
