@@ -2,7 +2,7 @@
 Hazel
 ========
 
-Hazel is essentially an Alexa-Walkie-Talkie.  It allows users to speak to other
+Hazel is a Raspberry Pi based voice-enabled wi-fi walkie-talkie.  It allows users to speak to other
 users through a Raspberry Pi based contraption.
 
 Look how easy it is to use!
@@ -24,9 +24,7 @@ Features
 Installation
 ------------
 
-Install $project by running:
 
-    install project
 
 Contribute
 ----------
