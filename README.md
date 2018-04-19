@@ -57,10 +57,19 @@ Functions
     |  GOODBYE/      | Disconnects from the server.  Does not allow new connections           |
     |  /HELLO/BOB    | Pushes string "Hello NAME" to client                                   |
 
+| Server API          |    Client API                        |   Action                             |  Return                                      |
+|---------------------|--------------------------------------|--------------------------------------|----------------------------------------------|
+|  GET /hello/name    |                                      |                                      | {connected True, users:{"jason","john"}}     |
+|  /hello/name        |                                      | userappend(user)                     |                                              |
+|  /find              |                                      | lists all users                      |                                              |
+|  /call/target       | target/ring/user                     |                                      |                                              |
+|                     | {accept:True/False, port:Port}       |                                      |                                              |
+|  /drop              |                                      |                                      |                                              |
+|  /goodbye           |                                      |                                      |                                              |
 
 
 
-| Function Name           | Prefix Verb |  URI Pattern                         |   Controller#Action
+|                         | Prefix Verb |  URI Pattern                         |   Controller#Action
 |-------------------------|-------------|--------------------------------------|--------------------------------------|
 |   request_attachments   | GET         | /request_attachments(.:format)       |   request_attachments#index
 |                         | POST        | /request_attachments(.:format)       |   request_attachments#create
@@ -81,3 +90,4 @@ Functions
 |   costs_populate_options| GET         | /costs/populate_options(.:format)    |   costs#populate_options
 |      costs_get_estimate | GET         | /costs/get_estimate(.:format)        |   costs#get_estimate
 |        new_dependency   | GET         | /costs/new_dependency(.:format)      |   costs#new_dependency
+
