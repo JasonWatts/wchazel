@@ -57,14 +57,14 @@ Functions
     |  GOODBYE/      | Disconnects from the server.  Does not allow new connections           |
     |  /HELLO/BOB    | Pushes string "Hello NAME" to client                                   |
 
-| Server API          |    Client API                        |   Action                             |  Return                                      |
-|---------------------|--------------------------------------|--------------------------------------|----------------------------------------------|
-|  GET /hello/name    |                                      |                                      | {connected True, users:{"jason","john"}}     |
-|  /hello/name        |                                      | userappend(user)                     |                                              |
-|  /find              |                                      | lists all users                      |                                              |
-|  /call/target       | target/ring/user                     |                                      |                                              |
-|                     | {accept:True/False, port:Port}       |                                      |                                              |
-|  /drop              |                                      |                                      |                                              |
-|  /goodbye           |                                      |                                      |                                              |
+| Server API          |    Client API                        |   Action                             |  Return                                      | Description                                                             |
+|---------------------|--------------------------------------|--------------------------------------|----------------------------------------------|-------------------------------------------------------------------------|
+|  GET /hello/name    |                                      |                                      | {connected True, users:{"jason","john"}}     | Display the help window                                                 |
+|  /hello/name        |                                      | userappend(user)                     |                                              |                                                                         |
+|  /find              |                                      | lists all users                      |                                              | Lists all users                                                         |
+|  /call/target       | target/ring/user                     |                                      |                                              | Defines which user to call                                              |
+|                     | {accept:True/False, port:Port}       |                                      |                                              |                                                                         |
+|  /drop              |                                      |                                      |                                              | Drops connection to other user but still allows for other connections   |
+|  /goodbye           |                                      |                                      |                                              | Disconnects from the server.  Does not allow new connections            |
 
 
