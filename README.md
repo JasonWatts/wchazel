@@ -28,8 +28,7 @@ Installation
 Contribute
 ----------
 
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
+- Issue Tracker: submit an issue at this page: https://gitlab.com/wchazel/hazelproject-server/hazel-server
 - Made by Westmont's CS145 class.  Operating Systems Spring 2018.
 
 Support
