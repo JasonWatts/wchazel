@@ -68,26 +68,3 @@ Functions
 |  /goodbye           |                                      |                                      |                                              |
 
 
-
-|                         | Prefix Verb |  URI Pattern                         |   Controller#Action
-|-------------------------|-------------|--------------------------------------|--------------------------------------|
-|   request_attachments   | GET         | /request_attachments(.:format)       |   request_attachments#index
-|                         | POST        | /request_attachments(.:format)       |   request_attachments#create
-|   new_request_attachment| GET         | /request_attachments/new(.:format)   |   request_attachments#new
-|  edit_request_attachment| GET         | /request_attachments/:id/edit(.:f    |   request_attachments#edit
-|       request_attachment| GET         | /request_attachments/:id(.:format)   |   request_attachments#show
-|                         | PATCH       | /request_attachments/:id(.:format)   |   request_attachments#update
-|                         | PUT         | /request_attachments/:id(.:format)   |   request_attachments#update
-|                         | DELETE      | /request_attachments/:id(.:format)   |   request_attachments#destroy
-|         file_attachments| GET         | /file_attachments(.:format)          |   file_attachments#index
-|                         | POST        | /file_attachments(.:format)          |   file_attachments#create
-|      new_file_attachment| GET         | /file_attachments/new(.:format)      |   file_attachments#new
-|     edit_file_attachment| GET         | /file_attachments/:id/edit(.:format) |   file_attachments#edit
-|          file_attachment| GET         | /file_attachments/:id(.:format)      |   file_attachments#show
-|                         | PATCH       | /file_attachments/:id(.:format)      |   file_attachments#update
-|                         | PUT         | /file_attachments/:id(.:format)      |   file_attachments#update
-|                         | DELETE      | /file_attachments/:id(.:format)      |   file_attachments#destroy
-|   costs_populate_options| GET         | /costs/populate_options(.:format)    |   costs#populate_options
-|      costs_get_estimate | GET         | /costs/get_estimate(.:format)        |   costs#get_estimate
-|        new_dependency   | GET         | /costs/new_dependency(.:format)      |   costs#new_dependency
-
