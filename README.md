@@ -45,22 +45,6 @@ The project is licensed under the BSD license.
 
 Functions
 ---------
-| Server API          |    Client API                        |   Action                             |  Return                                      | Description                                                             |
-|---------------------|--------------------------------------|--------------------------------------|----------------------------------------------|-------------------------------------------------------------------------|
-|  GET /hello/name    |                                      |                                      | {connected True, users:{"jason","john"}}     | Display the help window                                                 |
-|  /hello/name        |                                      | userappend(user)                     |                                              |                                                                         |
-|  /find              |                                      | lists all users                      |                                              | Lists all users                                                         |
-|  /call/target       | target/ring/user                     |                                      |                                              | Defines which user to call                                              |
-|                     | {accept:True/False, port:Port}       |                                      |                                              |                                                                         |
-|  /drop              |                                      |                                      |                                              | Drops connection to other user but still allows for other connections   |
-|  /goodbye           |                                      |                                      |                                              | Disconnects from the server.  Does not allow new connections            |
-
-| Sent by  |  Sent to |  Route             | purpose  | return  values |  side effect   |
-|----------|----------|--------------------|----------|----------------|----------------|
-| jasper   |  client  |  /hello/i/am/alice | introduce the client to the server |         | http://server:1007/hello/alice
-| client   |  server  |  /hello/alice    { connected: True, users: { "alice", "bob" }} Insert alice, ipnumber into users{}
-| jasper   |  client  |  /find see who can be connected to
-
 
 |  Sent by | Sent to | Route | purpose | return values | side effect | comments |
 |  ------ | ------ | ------ | ------ | ------ | ------ | ------ |
