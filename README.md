@@ -46,7 +46,7 @@ The project is licensed under the BSD license.
 Functions
 ---------
 
-|  Sent by | Sent to | Route | purpose | return values | side effect | comments |
+|Sent by | Sent to | Route | purpose | return values | side effect | comments |
 |  ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 |  jasper | client | hello i am alice | introduce the client to the server in response to spoken "Hazel, hello. I am Alice." |  | http://server:1007/hello/alice | We could have the actual words spoken to hazel be "Hazel I am Alice" with 'hello' implied. |
 |  client | server | /hello/alice |  | { connected: True, users: { "alice", "bob" }} | Insert alice, ipnumber into users{} |  |
