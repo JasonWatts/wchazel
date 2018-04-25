@@ -53,7 +53,7 @@ Functions
 |  jasper | client | find | see who can be connected to |  | http://server:1007/find |  |
 |  client | server | /find | see who can be connected to | { users: { "alice", "bob" }} | none |  |
 |  jasper | client | /call/bob | Make a connection to Bob | { connect: { users[Bob].port }} | open up streaming port X, http://server:1007/call/bob/X  |  |
-|  client | server | /call/bob/X | Make a connection to Bob | { request_received: True } | Receives a request to connect with caller<br/>sets user[Alice].IP=X<br/>http://user[bob].IP/ring/alice |  |
+|  client | server | /call/bob/IP:PORT | Make a connection to Bob | { request_received: True } | Receives a request to connect with caller<br/>sets user[Alice].IP=X<br/>http://user[bob].IP/ring/alice |  |
 |  server | client | /ring/alice | Ask client if OK to talk with Alice | { accept: True } or { accept: False } | Asks the person to "answer" the call, and start to conversation.<br/>if (accept) then http://user[alice].IP/accept/bob<br/>else http://user[alice].IP/drop/bob |  |
 |  client | jasper | /ring/alice | convert request to spoken "OK to talk with Alice?" |  | Listen for Yes/No response |  |
 |  jasper | client | accept alice | if user says 'Yes' | { connected: True} | http://server:1007/accept/alice |  |
