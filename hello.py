@@ -76,8 +76,29 @@ def accept(name):
     data['IP'] = temp_ip
     data['PORT'] = temp_port
     json_data = json.dumps(data)
+    
     return json_data
     
+
+@app.route("/drop/<name>")
+def drop(name):
+    data = {}
+    data['drop'] = "api doesnt specify what to return"
+    json_data = json.dumps(data)
+    #send the user drop message (this was not spceified in api)
+    return json_data
+
+@app.route("/goodbye/<name>")
+def goodbye(name):
+    data = {}
+    users.remove(name)
+    data['connected'] = False
+    data['users'] = users
+    json_data = json.dumps(data)
+    
+    
+    return json_data
+
         
         
         
